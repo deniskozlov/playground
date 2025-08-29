@@ -6,7 +6,7 @@ public enum Phrasebook {
     }
 
     public static func word(for locale: String) throws -> String {
-        let bundle = Bundle.main
+        let bundle = Bundle.module
         guard let url = bundle.url(forResource: "phrases", withExtension: "json") else {
             throw LoadError.fileNotFound
         }

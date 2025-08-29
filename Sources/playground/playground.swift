@@ -8,7 +8,7 @@ public struct PlayGreeter {
             return "\(greeting) \(name)! Welcome to the Swift playground."
         } catch {
             print("Error getting greeting: \(error)")
-            return "\(name)! Welcome to the Swift playground."
+            return "\(name)! Error getting greeting."
         }
     }
 }
